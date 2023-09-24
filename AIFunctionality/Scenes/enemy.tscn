@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcddnris88wej"]
+
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_ifhcr"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_bdw3x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rt7fu"]
+radius = 22.0
+
+[node name="Enemy" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_ifhcr")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.890196, 0.12549, 0.12549, 1)
+position = Vector2(0, 1.07974e-05)
+scale = Vector2(44.0499, 44.0499)
+mesh = SubResource("SphereMesh_bdw3x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_rt7fu")
