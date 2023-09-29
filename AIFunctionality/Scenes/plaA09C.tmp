@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca10bkmkfadta"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_lu85s"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iafet"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vc5cg"]
+radius = 22.0
+height = 86.0
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_lu85s")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+modulate = Color(0.372549, 0.541176, 0.709804, 1)
+position = Vector2(0, 13.9833)
+scale = Vector2(44, 44)
+mesh = SubResource("CapsuleMesh_iafet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15)
+shape = SubResource("CapsuleShape2D_vc5cg")

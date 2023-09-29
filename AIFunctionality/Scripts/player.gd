@@ -1,9 +1,12 @@
 extends CharacterBody2D
 
+class_name Player
+
 @export var move_speed = 40000
+var player_position = Vector2.ZERO
 
 func ready():
-	pass
+	print("player script loaded:")
 
 func _physics_process(delta):
 	var screen_size = get_viewport_rect().size
@@ -11,6 +14,7 @@ func _physics_process(delta):
 	
 	global_position = global_position.clamp(Vector2(0, 0), screen_size)
 	velocity = Vector2(move_speed, move_speed) * delta
+	var player_position = global_position
 	
 	if Input.is_action_pressed("move_left"):
 		input_vector.x = -move_speed
