@@ -21,6 +21,7 @@ position = Vector2(574, 324)
 position = Vector2(570, 305)
 
 [node name="Enemy" type="RigidBody2D" parent="."]
+visible = false
 position = Vector2(90, 58)
 gravity_scale = 0.0
 max_contacts_reported = 5
@@ -36,3 +37,5 @@ mesh = SubResource("SphereMesh_mn0oe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
 shape = SubResource("CircleShape2D_57upb")
+
+[connection signal="body_entered" from="Enemy" to="Enemy" method="_on_body_entered"]

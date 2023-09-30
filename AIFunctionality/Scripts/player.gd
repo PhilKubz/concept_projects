@@ -6,8 +6,8 @@ class_name Player
 var player_position = Vector2.ZERO
 
 func ready():
-	print("player script loaded:")
-
+	pass
+	
 func _physics_process(delta):
 	var screen_size = get_viewport_rect().size
 	var input_vector = Vector2.ZERO

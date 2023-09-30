@@ -1,4 +1,8 @@
 extends Node2D
 
+@onready var player = $Player
+@onready var enemy = $Enemy
+
 func ready():
-	print("Main scene script loaded")
+	print("player")
+	
