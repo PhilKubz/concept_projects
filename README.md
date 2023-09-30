@@ -41,7 +41,8 @@ After 2 months of exploring the world of game design and learning how to to use 
 | Projct |              Description |
 | ------------ | ------------ |
 | [Enemy Spawning](#enemy-spawning) | Designing a system that spawns enemies for implementation in levels |
-
+| [AI Functionality](#ai-functionality) | Designing/testing functionality for AI/enemiey behavior |
+| [Character Creation](#character-creation) | Designing a system for players to customize their character with multiple categories of choices |
 
 
 
@@ -53,9 +54,25 @@ After 2 months of exploring the world of game design and learning how to to use 
 
  Ideas for Improvement: Change size of spawned enemies, randomize timer, try with different enemies types
 
+ ### AI Functionality
+ - This project implements different behaviors for enemies that could be used for future game development projects
+ - Enemies are designed to have completely autonomous behavior and react in specific ways according to the play of the user
+ - Allows for enemies to be more responsive, smarter, and give a more fulfilling experience for players
+
+ Ideas for Improvement: Designing several more typs of AI funcitonality and enemy behaviors - conditional statements for even more uniqueness
+
+ ### Character Creation
+ - This project implements a system of character customization for a player
+ - Assets are properly stored, loaded, and fit with each model when the player reels through options given
+ - Allows for customization and player input when choosing their own design
+
+ Ideas for Improvement: Upgraded assets for models, 3D models/assetts, full rotation of character during customization process
+
 
 ### Contacts
 [Email](philip.kubisz@gmail.com)
+
+[Portfolio](https://philip-kubisz-portfolio.netlify.app/)
 
 [GitHub](https://github.com/PhilKubz)
 
