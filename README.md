@@ -38,7 +38,7 @@ After 2 months of exploring the world of game design and learning how to to use 
 
 
 ### Projects
-| Projct |              Description |
+| Project |              Description |
 | ------------ | ------------ |
 | [Enemy Spawning](#enemy-spawning) | Designing a system that spawns enemies for implementation in levels |
 | [AI Functionality](#ai-functionality) | Designing/testing functionality for AI/enemiey behavior |
